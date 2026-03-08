@@ -1,0 +1,121 @@
+{
+  "system": {
+    "name": "Demo Data Platform",
+    "version": "1.0.0",
+    "generated_at": "2026-03-09T12:00:00Z"
+  },
+  "users": [
+    {
+      "id": 1001,
+      "username": "user_1001",
+      "email": "user1001@example.com",
+      "profile": {
+        "first_name": "Rahim",
+        "last_name": "Ahmed",
+        "age": 25,
+        "country": "Bangladesh",
+        "skills": ["Python", "Networking", "Linux", "Cybersecurity"],
+        "social": {
+          "github": "github.com/user1001",
+          "linkedin": "linkedin.com/in/user1001"
+        }
+      },
+      "activity": {
+        "posts": 45,
+        "followers": 120,
+        "following": 80
+      }
+    },
+    {
+      "id": 1002,
+      "username": "user_1002",
+      "email": "user1002@example.com",
+      "profile": {
+        "first_name": "Karim",
+        "last_name": "Hossain",
+        "age": 23,
+        "country": "Bangladesh",
+        "skills": ["C", "Assembly", "Data Structures"],
+        "social": {
+          "github": "github.com/user1002",
+          "linkedin": "linkedin.com/in/user1002"
+        }
+      },
+      "activity": {
+        "posts": 20,
+        "followers": 75,
+        "following": 40
+      }
+    }
+  ],
+
+  "products": [
+    {
+      "id": "P-1001",
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 850,
+      "stock": 32,
+      "ratings": [
+        {"user_id": 1001, "rating": 4, "comment": "Good performance"},
+        {"user_id": 1002, "rating": 5, "comment": "Excellent"}
+      ]
+    },
+    {
+      "id": "P-1002",
+      "name": "Mechanical Keyboard",
+      "category": "Accessories",
+      "price": 120,
+      "stock": 150,
+      "ratings": [
+        {"user_id": 1001, "rating": 5, "comment": "Great typing experience"}
+      ]
+    }
+  ],
+
+  "posts": [
+    {
+      "post_id": 501,
+      "author_id": 1001,
+      "title": "Learning Linux",
+      "content": "Linux is a powerful OS used in servers and cybersecurity.",
+      "tags": ["linux", "security", "opensource"],
+      "comments": [
+        {
+          "comment_id": 9001,
+          "user_id": 1002,
+          "text": "Great explanation!",
+          "likes": 10
+        }
+      ]
+    }
+  ],
+
+  "logs": [
+    {
+      "timestamp": "2026-03-09T10:00:00Z",
+      "level": "INFO",
+      "service": "auth-service",
+      "message": "User login successful",
+      "user_id": 1001,
+      "ip": "192.168.1.10"
+    },
+    {
+      "timestamp": "2026-03-09T10:05:10Z",
+      "level": "WARNING",
+      "service": "payment-service",
+      "message": "Slow API response",
+      "duration_ms": 1200
+    }
+  ],
+
+  "analytics": {
+    "daily_active_users": 1200,
+    "monthly_active_users": 10450,
+    "revenue": {
+      "today": 540,
+      "month": 15400,
+      "currency": "USD"
+    }
+  }
+}
